@@ -1,0 +1,104 @@
+
+if game.PlaceId == 9183710361 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Procar", "DarkTheme")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+    MainSection:NewButton("INFO", "Press F9 So That You Can See The Info!")
+        print("Hello,Im a new coder and i would like to tell you that this is one of my first projects. Il be glad if you would read just a few more lines.")
+        print("Before using the exploit please make sure that you already know that there may be chances of you getting banned,so please use this exploit in a private server or a public server whit barely any people on it.")
+        print("Thats all i had to say. Have Fun!")
+        print(":D")
+
+        local Player = Window:NewTab("Player")
+        local PlayerSection = Player:NewSection("Player")
+        PlayerSection:NewSlider("Walkspeed", "Changes You Speed", 1000, 0, function(s)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+        end)
+        
+        PlayerSection:NewSlider("JumpPower", "Changes You Jump Power", 1000, 0, function(s)
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+        end)
+
+    
+    --Fist--
+
+    local Fist = Window:NewTab("Fist")
+    local FistSection = Fist:NewSection("Fist")
+    
+    
+    FistSection:NewButton("FistAutoGrind", "Bassicaly it punches for you.Btw the animation doesnt show but you do get fist.", function()
+         getgenv().farmer = true;
+while wait() do 
+if getgenv().farmer == true then
+game:GetService("Workspace").LocalPlayer.Backpack.MainStrengthEvent.FSEvent:FireServer()
+  end
+end
+     end)
+
+     FistSection:NewButton("FistAutoGrind Off", "Turns Off The AutoGrind", function()
+        getgenv().farmer = false;
+        while wait() do 
+        if getgenv().farmer == true then
+        game:GetService("Workspace").LocalPlayer.Backpack.MainStrengthEvent.FSEvent:FireServer()
+          end
+        end
+
+    end)
+     
+
+
+    FistSection:NewButton("1K Fist Zone", "Teleports You To The 1K Fist Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56, 49, -73)
+    end)    
+    FistSection:NewButton("100k Fist Zone", "Teleports You To The 100K Fist Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2465, 63, -2304)
+    end)
+    FistSection:NewButton("1M Fist Zone", "Teleports You To The 1M Fist Zone",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2399, 66, -2333)
+    end)
+    FistSection:NewButton("100M Fist Zone", "Teleports You To The 100M Fist Zone",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2479, 81, -2387)
+    end)
+    FistSection:NewButton("1B Fist Zone", "Teleports You To The 1B Fist Zone",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-145, 1556, -65)
+    end)
+    FistSection:NewButton("100B Fist Zone", "Teleports You To The 100B Fist Zone",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(182, 2514, -466)
+    end)
+    FistSection:NewButton("1T Fist Zone", "Teleports You To The 1T Fist Zone",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207, 3492, 115)
+    end)
+    FistSection:NewButton("100T Fist Zone", "Teleports You To The 100T Fist Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(827, 5565, -1697)
+    end)
+    FistSection:NewButton("35Qa Fist Zone", "Teleports You To The 35Qa Fist Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-233, 543, 322)
+    end)
+    FistSection:NewButton("500Qa Fist Zone", "Teleports You To The 500Qa Fist Zone",function ()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2294, 7288, 2633)
+    end)
+    FistSection:NewButton("5Qi Fist Zone", "Teleports You To The 5Qi Fist Zone", function ()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1925, 13219, 2142)
+    end)
+    FistSection:NewButton("350Qi Fist Zone", "Teleports You To The 350Qi Fist Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2788, 21224, -2936)
+    end)
+
+
+
+   --Body--
+
+    
+    local Body = Window:NewTab("Body")
+    local BodySection = Body:NewSection("Body")
+    BodySection:NewButton("1K Body Zone", "Teleports You To The 1K Body Zone", function()
+        print("Teleported")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1792, 43, 712)
+    end)
+
+
+
+
+
+end
