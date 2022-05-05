@@ -20,14 +20,26 @@ if game.PlaceId == 9183710361 then
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
         end)
 
-    
+
+        local Locations = Window:NewTab("Locations")
+        local LocationsSection = Locations:NewSection("Locations")
+        LocationsSection:NewButton("Spawn", "Teleports You To Spawn", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-167.987, 57.5348, 14.6821)
+        end)
+        
+        LocationsSection:NewButton("LeaderBoards", "Teleports You To LeaderBoards", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47, 30, -278)
+        end)
+        LocationsSection:NewButton("PVP Arena", "Teleports You To The PVP Arena", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1379.91, 8.12806, -2271.77)
+        end)
     --Fist--
 
     local Fist = Window:NewTab("Fist")
     local FistSection = Fist:NewSection("Fist")
     
     
-    FistSection:NewButton("FistAutoGrind", "Bassicaly it punches for you.Btw the animation doesnt show but you do get fist.", function()
+    FistSection:NewButton("FistAutoGrind", "Automatically grinds fist for you", function()
          getgenv().farmer = true;
 while wait() do 
 if getgenv().farmer == true then
@@ -92,13 +104,54 @@ end
     
     local Body = Window:NewTab("Body")
     local BodySection = Body:NewSection("Body")
+    BodySection:NewButton("BodyAutoGrind", "Automatically grinds fist for you", function()
+        getgenv().farmer = true;
+        while wait() do 
+        if getgenv().farmer == true then
+        game:GetService("Workspace").LocalPlayer.Backpack.MainBTEvent.BTEvent:FireServer()
+          end
+        end
+    end)
     BodySection:NewButton("1K Body Zone", "Teleports You To The 1K Body Zone", function()
         print("Teleported")
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1792, 43, 712)
     end)
+    BodySection:NewButton("100K Body Zone", "Teleports You To The 100K Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1478.48, 37.6216, 1105.39)
+    end)
+    BodySection:NewButton("1M Body Zone", "Teleports You To The 1M Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new (-503, 261, -1258)
+    end)
+    BodySection:NewButton("100M Body Zone", "Teleports You To The 100M Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2452.81, 527.786, -2337.43)
+    end)
+    BodySection:NewButton("1B Body Zone", "Teleports You To The 1B Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(57.2771, 29.1447, 215.548)
+    end)
+    BodySection:NewButton("100B Body Zone", "Teleports You To The 100B Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.2702, 15.8445, 198.696)
+    end)
+    BodySection:NewButton("1T Body Zone", "Teleports You To The 1T Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.2253, 15.7845, 184.943)
+    end)
+    BodySection("100T Body Zone", "Teleports You To The 100T Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.2696, 16.4597, 156.484)
+    end)
+    BodySection("5Qa Body Zone", "Teleports You To The 5Qa Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.6855, 16.232, 135.644)
+    end)
+    BodySection("35Qa Body Zone", "Teleports You To The 35Qa Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(55.301, 12.2469, 103.91)
+    end)
+    BodySection("500Qa Body Zone", "Teleports You To The 500Qa Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.5683, 11.4612, 83.5291)
+    end)
+    BodySection("5Qi Body Zone", "Teleports You To The 5Qi Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1811.76, 56.5318, 756.346)
+    end)
+    BodySection("350Qi Body Zone", "Teleports You To The 350Qi Body Zone", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1821.37, 57.3479, 802.165)
+    end)
 
 
-
-
-
-end
+ end
